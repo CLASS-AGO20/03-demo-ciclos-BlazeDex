@@ -67,12 +67,10 @@ export default class App {
             }
             
             i++;
-        } while(1 <= 20);
+        } while(i <= 20);
         
         return suma;
-    }
-
-    
+    }   
     
 }
 
