@@ -104,10 +104,7 @@ let app = new App();
 
 console.log(app.sumarParesFor());
 console.log(app.contarImparesFor(1, 15));
-console.log(app.contarImparesFor(15, 1));
 console.log(app.sumarParesWhile());
 console.log(app.contarImparesWhile(1, 15));
-console.log(app.contarImparesWhile(15, 1));
 console.log(app.sumarParesDo());
 console.log(app.contarImparesDo(1, 15));
-console.log(app.contarImparesDo(15, 1));
