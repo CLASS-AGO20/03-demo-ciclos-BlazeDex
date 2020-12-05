@@ -20,7 +20,7 @@ export default class App {
 
         for(let i = inicio; i <= fin; i = i + 1) {
             if(i % 2 !== 0) {
-                counter = counter + 1;
+                counter++;
             }
         }
         return counter;
