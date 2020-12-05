@@ -45,13 +45,6 @@ export default class App {
         
         let i = inicio;
         let counter = 0;
-
-        if(inicio > fin) {
-            let c = inicio;
-            inicio = fin;
-            fin = c;
-        }
-
         
         while(i <= fin) {
             if(i % 2 !== 0) {
@@ -81,13 +74,7 @@ export default class App {
     contarImparesDo(inicio, fin) {
         let i = inicio;
         let counter = 0;
-
-        if(inicio > fin) {
-            let c = inicio;
-            inicio = fin;
-            fin = c;
-        }
-
+        
         do {
             if(i % 2 !== 0) {
                 counter++;
