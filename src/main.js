@@ -43,6 +43,12 @@ export default class App {
 
     contarImparesWhile(inicio, fin) {
         
+        if(inicio > fin) {
+            let c = inicio;
+            inicio = fin;
+            fin = c;
+        }
+
         let i = inicio;
         let counter = 0;
         
@@ -72,6 +78,13 @@ export default class App {
     }
     
     contarImparesDo(inicio, fin) {
+
+        if(inicio > fin) {
+            let c = inicio;
+            inicio = fin;
+            fin = c;
+        }
+        
         let i = inicio;
         let counter = 0;
         
