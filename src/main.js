@@ -20,7 +20,7 @@ export default class App {
 
         for(let i = inicio; i <= fin; i = i + 1) {
             if(i % 2 !== 0) {
-                counter++;
+                counter = counter + 1;
             }
         }
         return counter;
@@ -44,9 +44,9 @@ export default class App {
     contarImparesWhile(inicio, fin) {
         
         if(inicio > fin) {
-            let c = inicio;
+            let a = inicio;
             inicio = fin;
-            fin = c;
+            fin = a;
         }
 
         let i = inicio;
@@ -54,10 +54,10 @@ export default class App {
         
         while(i <= fin) {
             if(i % 2 !== 0) {
-                counter++;
+                counter = counter + 1;
             }
 
-            i++;
+            i = i + 1;
         }
         return counter;
     }
@@ -80,9 +80,9 @@ export default class App {
     contarImparesDo(inicio, fin) {
 
         if(inicio > fin) {
-            let c = inicio;
+            let b = inicio;
             inicio = fin;
-            fin = c;
+            fin = b;
         }
         
         let i = inicio;
@@ -90,10 +90,10 @@ export default class App {
         
         do {
             if(i % 2 !== 0) {
-                counter++;
+                counter = counter + 1;
             }
 
-            i++;
+            i = i + 1;
         } while(i <= fin);
 
         return counter;
@@ -104,7 +104,10 @@ let app = new App();
 
 console.log(app.sumarParesFor());
 console.log(app.contarImparesFor(1, 15));
+console.log(app.contarImparesFor(15, 1));
 console.log(app.sumarParesWhile());
 console.log(app.contarImparesWhile(1, 15));
+console.log(app.contarImparesWhile(15, 1));
 console.log(app.sumarParesDo());
 console.log(app.contarImparesDo(1, 15));
+console.log(app.contarImparesDo(15, 1));
